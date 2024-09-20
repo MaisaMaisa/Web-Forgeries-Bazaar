@@ -1,0 +1,616 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.top-header {
+    position: fixed;
+    top: 0;
+    background-color: #eee;
+    height: 45px;
+    align-items: center;
+    border-bottom: 0.5px solid gray;
+    font-weight: normal;
+    width: 100%;
+    display: flex;
+}
+
+.top-header ul {
+    margin: 0px 5px;
+    color: #222222;
+    font-size: 13px;
+    list-style: none;
+    padding: 8px 5px;
+    display: inline-flex;
+}
+
+.top-header nonmobile {
+    display: inline-flex;
+}
+
+header ul li {
+    padding: 2px;
+    padding-left: 12px;
+    padding-right: 2px;
+    border-radius: 5px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: gray;
+    background-color: white;
+    margin: 0px 5px;
+}
+
+header ul li:hover {
+    background: #bacff2;
+    cursor: pointer;
+}
+
+.headerblock {
+    height: 45px;
+}
+
+/* This is where I will stylize my icons! */
+
+.icons {
+    margin-left: 40%;
+    display: inline-flex;
+}
+
+.icons:hover {
+    cursor: pointer;
+}
+
+.black {
+    color: black;
+    font-size: 10px;
+    padding-top: 3px;
+    padding-left: 25px;
+}
+
+.purple {
+    color: #551A8B;
+    font-size: 19px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.green {
+    margin-right: 10px;
+    color: #090;
+    font-size: 20px;
+    display: inline-flex;
+}
+
+.user {
+    color: black;
+    font-size: 20px;
+    margin: 0;
+    display: inline-flex;
+}
+
+.label {
+    color: #333;
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.magnify {
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+.lines {
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+.bell {
+    padding-right: 5px;
+}
+
+.star {
+    color: #A9A9A9;
+    padding-right: 10px;
+}
+
+.star:hover {
+    cursor: pointer;
+}
+
+.trash {
+    color: #A9A9A9;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.cross {
+    color: #222222;
+    font-size: 14.4px;
+    padding: 4px;
+    text-align: center;
+}
+
+/* This is where the body will begin! */
+
+.container-body {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 100%;
+    gap: 0px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "left right";
+    margin-bottom: 36px;
+}
+
+.right {
+    grid-area: right;
+}
+
+.left {
+    grid-area: left;
+}
+
+/* Left Main begins here */
+
+.left ul {
+    font-size: 20.8px;
+    font-weight: lighter;
+    color: #0000EE;
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 8px;
+    line-height: 1.2;
+}
+
+.left li {
+    list-style: none;
+    font-size: 14px;
+    color: #222222;
+    margin: 3px 0px;
+}
+
+.left li:hover {
+    cursor: pointer;
+}
+
+.left ul:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.left p1 {
+    font-size: 11px;
+    color: #222222;
+    display: inline-flex;
+    margin-top: 15px;
+    margin-left: 5px;
+    padding: 2px;
+}
+
+.left p2 {
+    display: inline-flex;
+    font-size: 13px;
+    color: #ccc;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 3px;
+    margin-top: 0px;
+    margin-left: 4px;
+    padding: 3px;
+    width: 65px;
+}
+
+.left p2:hover {
+    border-color: #999;
+    cursor:text;
+}
+
+.left p3 {
+    font-size: 14.4px;
+    color: #0000EE;
+    margin-left: 5px;
+}
+
+.left p3:hover {
+    text-decoration: underline;
+}
+
+.left p4 {
+    font-size: 14px;
+    color: #A9A9A9;
+    background: #DDDDDD;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #DDDDDD;
+    border-radius: 3px;
+    margin-top: 12px;
+    margin-left: 6px;
+    padding: 8px 22px;
+    display: inline-flex;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.left p5 {
+    font-size: 14px;
+    color: #0000EE;
+    background: #FFFFFF;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #888;
+    border-radius: 3px;
+    margin-top: 12px;
+    margin-left: 5px;
+    padding: 8px 22px;
+    display: inline-flex;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.left p5:hover {
+    background: #bacff2;
+    cursor: pointer;
+}
+
+/* Right Main begins here */
+
+.search {
+    display: inline-flex;
+    font-size: 17px;
+    color: #888;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #888;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 8px;
+    width: 92%;
+}
+
+.search2 {
+    font-size: 15px;
+    color: #0000EE;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #888;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 9px;
+    width: 10%;
+}
+
+.search2:hover {
+    background: #bacff2;
+    cursor: pointer;
+}
+
+.rowtwo {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+
+.rowtwo p1 {
+    font-size: 16px;
+    color: #0000EE;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #888;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 8px;
+}
+
+.rowtwo p1:hover {
+    background: #bacff2;
+    cursor: pointer;
+}
+
+.rowtwo p2 {
+    font-size: 14px;
+    color: #A9A9A9;
+    background: #DDDDDD;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #DDDDDD;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 8px;
+}
+
+.rowtwo p3 {
+    font-size: 16px;
+    color: #222222;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 8px;
+}
+
+.rowtwo p4 {
+    font-size: 14px;
+    color: #0000EE;
+    background: #FFFFFF;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #888;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 8px;
+}
+
+.rowtwo p4:hover {
+    background: #bacff2;
+    cursor: pointer;
+}
+
+.rowtwo bottom {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #090;
+}
+
+.rowtwo navigation {
+    margin-left: 15%;
+}
+
+.rowtwo sav {
+    margin-left: 30%;
+}
+
+.rowtwo dropdown {
+    margin-top: 25px;
+}
+
+/* This is where mobile text will begin*/
+
+.mobiletext {
+    display: none;
+}
+
+.mobiletext p2 {
+    color: #222222;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 4px;
+    font-style: normal;
+}
+
+.mobiletext p1 {
+    color: #0000EE;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 150px;
+}
+
+.mobiletext p1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* This is where row three will begin */
+
+.rowthree {
+    align-items: center;
+}
+
+.rowthree p1 {
+    font-size: 16px;
+    color: #0000EE;
+    margin-top: 18px;
+    padding: 3px;
+    display: inline-flex;
+}
+
+.rowthree p1:hover {
+    text-decoration: underline;
+}
+
+.rowthree p2 {
+    font-size: 14px;
+    color: #222222;
+    margin-top: 20px;
+    padding: 3px;
+}
+
+.row three post {
+    width: 100%;
+}
+
+/* This is where row four will begin! */
+
+.mobile-nav {
+    display: none;
+    align-items: baseline;
+}
+
+.mobile-nav p1 {
+    font-size: 16px;
+    color: #0000EE;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #888;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 8px;
+}
+
+.mobile-nav p2 {
+    font-size: 14px;
+    color: #A9A9A9;
+    background: #DDDDDD;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #DDDDDD;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 8px;
+}
+
+.mobile-nav p3 {
+    font-size: 16px;
+    color: #222222;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 8px;
+}
+
+.mobile-nav p4 {
+    font-size: 14px;
+    color: #0000EE;
+    background: #FFFFFF;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #888;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 8px;
+}
+
+/* This is where the footer will begin! */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 32;
+    background-color: #eee;
+    border: 1px #ccc solid;
+    border-width: 1px 0 0 0;
+    text-align: center;
+}
+
+.footer p1 {
+    display: inline-flex;
+    padding-top: 10px;
+    font-size: 12.8px;
+    color: #222222;
+}
+
+.footer p2 {
+    display: inline-flex;
+    padding-top: 10px;
+    font-size: 13px;
+    color: #0000EE;
+    padding: 7.5px;
+}
+
+.footer p2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* MOBILE SETTINGS */
+
+@media (max-width: 414px) {
+    .body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-body {
+        grid-template-columns: 0% 100%;
+        margin-bottom: 0px;
+    }
+
+    .top-header ul li {
+        padding: 3px;
+        margin: 0px 2px 0px 0px;
+        color: #0000EE;
+        line-height: 24px;
+        background-color: #eaeaff;
+        border-color: #DDDDDD;
+    }
+
+    .top-header nonmobile {
+        display: none;
+    }
+
+    .icons {
+        margin-left: 0%;
+    }
+
+    .purple {
+        font-size: 26px;
+        padding-left: 2px;
+        padding-right: 8px;
+    }
+
+    .black {
+        padding-left: 5px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        display: block;
+    }
+
+    .rowtwo navigation {
+        display: none;
+    }
+
+    .rowtwo dropdown {
+        display: none;
+    }
+
+    .footer p1 {
+        font-size: 10.8px;
+    }
+
+    .footer p2 {
+        font-size: 11px;
+        padding: 3.5px;
+    }
+
+    .rowtwo sav {
+        display: none;
+    }
+
+    .search2 {
+        display: none;
+    }
+
+    .rowthree p1 {
+        display: block;
+    }
+
+    .rowthree p2 {
+        padding-left: 24px;
+    }
+
+    .trash {
+        font-size: 14px;
+    }
+
+    .mobile-nav {
+        display: flex;
+        padding-bottom: 40px;
+        justify-content: center;
+    }
+
+    .search {
+        margin-bottom: 15px;
+    }
+
+    .mobiletext {
+        display: inline-block;
+    }
+}
